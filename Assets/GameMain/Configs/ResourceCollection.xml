@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Entity" LoadType="0" Packed="True" />
+      <Resource Name="Material" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="1c76aae3d6a99c2488b0ff8a09b1eadd" ResourceName="Material" />
+      <Asset Guid="6206d82f9a993d24b80f6b048a5fb79a" ResourceName="Material" />
+      <Asset Guid="70e443f88f941184c8779a587a47ffda" ResourceName="Entity" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>
