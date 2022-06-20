@@ -17,7 +17,7 @@ namespace GameTowerDefense
 
             "UIForm",
 
-            "GameList",
+            "Enemy",
 
             "Music",
 
@@ -25,6 +25,7 @@ namespace GameTowerDefense
 
             "UISound",
 
+            "Towers",
 
         };
 
