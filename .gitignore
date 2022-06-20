@@ -5,3 +5,5 @@ Temp/
 *.csproj
 *.sln
 *.vsconfig
+Library/
+UserSettings/
