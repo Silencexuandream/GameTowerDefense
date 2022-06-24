@@ -46,6 +46,17 @@ namespace GameTowerDefense
             return Utility.Text.Format("Assets/GameMain/Entities/{0}.prefab", assetName);
         }
 
+
+        public static string GetEnitiyTowers(string assetName)
+        {
+            return Utility.Text.Format("Assets/GameMain/Entities/Towers/{0}.prefab", assetName);
+        }
+
+        public static string GetEntityEnemy(string assetName)
+        {
+            return Utility.Text.Format("Assets/GameMain/Entities/Enemies/{0}.prefab", assetName);
+        }
+
         public static string GetUIFormAsset(string assetName)
         {
             return Utility.Text.Format("Assets/GameMain/UI/UIForms/{0}.prefab", assetName);

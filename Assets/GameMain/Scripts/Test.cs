@@ -1,20 +1,24 @@
+using Cysharp.Threading.Tasks;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class Test : MonoBehaviour
 {
 
-    private void Start()
+    private  void Start()
     {
-        int [] arrays = { 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int [] arrs = new int [] { 1, 2, 3 ,4,5,6};   
+        Max(arrs,0,5);
 
 
-        int max = Max(arrays,0,arrays.Length-1);
-     
-        Debug.Log(max);
     }
+
+
+
+    
 
 
     public int Max(int [] arrays,int leftRange,int rightRange)

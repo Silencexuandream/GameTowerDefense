@@ -17,8 +17,6 @@ namespace GameTowerDefense
 
             m_DelaySeconds = 0;
 
-            string sceneName = procedureOwner.GetData<VarString>("SceneName");
-
             //这里进行游戏逻辑编写
             m_TowerDefense = new TowerDefense();
 

@@ -67,7 +67,7 @@ namespace GameTowerDefense
                 }
             }
 
-            procedureOwner.SetData<VarString>("SceneName", "Menu");
+            procedureOwner.SetData<VarString>("SceneName", "Combat");
             procedureOwner.SetData<VarBoolean>("IsGame", false);
 
             ChangeState<ProcedureChangeScene>(procedureOwner);

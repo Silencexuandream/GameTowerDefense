@@ -1,6 +1,7 @@
 
 using GameFramework.Fsm;
 using GameFramework.Resource;
+using UnityEngine;
 using UnityGameFramework.Runtime;
 
 namespace GameTowerDefense
@@ -14,8 +15,7 @@ namespace GameTowerDefense
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
 
 
-            //TODO
-
+           
 
             if (GameEntry.Base.EditorResourceMode)
             {

@@ -7,7 +7,7 @@ namespace GameTowerDefense
 {
     public static class DataTableExtension
     {
-        private const string DataRowClassPrefixName = "Game.DR";
+        private const string DataRowClassPrefixName = "GameTowerDefense.DR";
         internal static readonly char[] DataSplitSeparators = new char[] { '\t' };
         internal static readonly char[] DataTrimSeparators = new char[] { '\"' };
 

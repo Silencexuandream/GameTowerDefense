@@ -1,4 +1,6 @@
-
+using GameFramework.Event;
+using System;
+using UnityGameFramework.Runtime;
 namespace GameTowerDefense
 {
     /// <summary>
@@ -8,17 +10,30 @@ namespace GameTowerDefense
     {
         public override void Init()
         {
-           //反射创建所有游戏子系统
+            GameEntry.Event.Subscribe(ShowEntitySuccessEventArgs.EventId, OnShowEntitySuccess);
+
+            GameEntry.Entity.ShowEnemyEntity(60001);
         }
 
-        public override void OnDestroy()
-        {
-            
-        }
+      
+
+       
 
         public override void Update()
         {
             
+        }
+
+
+
+        public override void OnDestroy()
+        {
+            GameEntry.Event.Subscribe(ShowEntitySuccessEventArgs.EventId, OnShowEntitySuccess);
+        }
+
+        private void OnShowEntitySuccess(object sender, GameEventArgs e)
+        {
+           
         }
     }
 }

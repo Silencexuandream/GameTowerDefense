@@ -89,6 +89,15 @@ namespace GameTowerDefense
             private set;
         }
 
+        /// <summary>
+        /// 获取逻辑脚本。
+        /// </summary>
+        public string EntityLogic
+        {
+            get;
+            private set;
+        }
+
         public override bool ParseDataRow(string dataRowString, object userData)
         {
             string[] columnStrings = dataRowString.Split(DataTableExtension.DataSplitSeparators);
@@ -108,6 +117,7 @@ namespace GameTowerDefense
             Speed = float.Parse(columnStrings[index++]);
             DeadEffectId = int.Parse(columnStrings[index++]);
             DeadSoundId = int.Parse(columnStrings[index++]);
+            EntityLogic = columnStrings[index++];
 
             GeneratePropertyArray();
             return true;
@@ -127,6 +137,7 @@ namespace GameTowerDefense
                     Speed = binaryReader.ReadSingle();
                     DeadEffectId = binaryReader.Read7BitEncodedInt32();
                     DeadSoundId = binaryReader.Read7BitEncodedInt32();
+                    EntityLogic = binaryReader.ReadString();
                 }
             }
 
